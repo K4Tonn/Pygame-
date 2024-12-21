@@ -1,26 +1,21 @@
 import pygame
 import sys
 
-# Inisialisasi Pygame
 pygame.init()
 
-# Ukuran layar
 screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
 
-# Warna
 white = (255, 255, 255)
 red = (255, 0, 0)
 
-# Koordinat awal bola
+# Koordinat awal
 ball_x = screen_width // 2
 ball_y = screen_height // 2
 
-# Ukuran bola
 ball_radius = 20
 
-# Kecepatan bola
 ball_speed = 5
 
 # Membuat clock untuk kontrol FPS
@@ -63,7 +58,7 @@ while True:
     # Bola agar tetap dalam layar
     ball_x, ball_y = keep_ball_in_screen(ball_x, ball_y, ball_radius)
 
-    # Untuk BG dan bola
+    # BG warna bola
     screen.fill(white)
     pygame.draw.circle(screen, red, (ball_x, ball_y), ball_radius)
 
