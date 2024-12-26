@@ -1,1 +1,1 @@
-Pygame bola simpel
+Gk tau gw juga apaan ini
